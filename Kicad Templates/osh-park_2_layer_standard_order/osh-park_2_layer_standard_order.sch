@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:osh-park_2_layer_standard_order-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -10,7 +11,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -29,6 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:osh-park_2_layer_standard_order-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -43,26 +44,4 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L +3.3V #PWR?
-U 1 1 542877E0
-P 5150 3500
-F 0 "#PWR?" H 5150 3460 30  0001 C CNN
-F 1 "+3.3V" H 5150 3610 30  0000 C CNN
-F 2 "" H 5150 3500 60  0000 C CNN
-F 3 "" H 5150 3500 60  0000 C CNN
-	1    5150 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR?
-U 1 1 542877F4
-P 5150 3600
-F 0 "#PWR?" H 5150 3600 30  0001 C CNN
-F 1 "GND" H 5150 3530 30  0001 C CNN
-F 2 "" H 5150 3600 60  0000 C CNN
-F 3 "" H 5150 3600 60  0000 C CNN
-	1    5150 3600
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
