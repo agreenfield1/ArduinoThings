@@ -1,0 +1,39 @@
+(export (version D)
+  (design
+    (source C:\Users\Andrew\Documents\KiCad\Boards\WaterSensor\WaterSensor.sch)
+    (date "6/7/2016 8:03:30 PM")
+    (tool "Eeschema 4.0.2-stable")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date "zondag 28 september 2014")
+        (source WaterSensor.sch)
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref U1)
+      (value WaterSensor)
+      (footprint AJGFEET:WaterSensor)
+      (libsource (lib ajglib) (part WaterSensor))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 57575BEE)))
+  (libparts
+    (libpart (lib ajglib) (part WaterSensor)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) WaterSensor))
+      (pins
+        (pin (num 1) (name GND) (type input))
+        (pin (num 2) (name FLOAT) (type input)))))
+  (libraries
+    (library (logical ajglib)
+      (uri C:\Users\Andrew\Documents\KiCad\ajglib.lib)))
+  (nets
+    (net (code 1) (name "Net-(U1-Pad1)")
+      (node (ref U1) (pin 1)))
+    (net (code 2) (name "Net-(U1-Pad2)")
+      (node (ref U1) (pin 2)))))

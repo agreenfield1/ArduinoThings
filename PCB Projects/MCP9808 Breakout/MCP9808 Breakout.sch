@@ -1,0 +1,173 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ajglib
+LIBS:MCP9808 Breakout-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCP9808 U1
+U 1 1 56EF1815
+P 5350 3500
+F 0 "U1" H 5350 3350 60  0000 C CNN
+F 1 "MCP9808" H 5350 3950 60  0000 C CNN
+F 2 "Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm" H 5350 3500 60  0001 C CNN
+F 3 "" H 5350 3500 60  0000 C CNN
+	1    5350 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 56EF185A
+P 4700 3650
+F 0 "#PWR01" H 4700 3400 50  0001 C CNN
+F 1 "GND" H 4700 3500 50  0000 C CNN
+F 2 "" H 4700 3650 50  0000 C CNN
+F 3 "" H 4700 3650 50  0000 C CNN
+	1    4700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 56EF1870
+P 3800 3150
+F 0 "#PWR02" H 3800 2900 50  0001 C CNN
+F 1 "GND" H 3800 3000 50  0000 C CNN
+F 2 "" H 3800 3150 50  0000 C CNN
+F 3 "" H 3800 3150 50  0000 C CNN
+	1    3800 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 56EF1886
+P 6650 3200
+F 0 "#PWR03" H 6650 3050 50  0001 C CNN
+F 1 "VCC" H 6650 3350 50  0000 C CNN
+F 2 "" H 6650 3200 50  0000 C CNN
+F 3 "" H 6650 3200 50  0000 C CNN
+	1    6650 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 56EF189C
+P 6650 3500
+F 0 "#PWR04" H 6650 3250 50  0001 C CNN
+F 1 "GND" H 6650 3350 50  0000 C CNN
+F 2 "" H 6650 3500 50  0000 C CNN
+F 3 "" H 6650 3500 50  0000 C CNN
+	1    6650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 56EF18B6
+P 6400 3350
+F 0 "C1" H 6425 3450 50  0000 L CNN
+F 1 "C" H 6425 3250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6438 3200 50  0001 C CNN
+F 3 "" H 6400 3350 50  0000 C CNN
+	1    6400 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 56EF194B
+P 6650 3350
+F 0 "C2" H 6675 3450 50  0000 L CNN
+F 1 "C" H 6675 3250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6688 3200 50  0001 C CNN
+F 3 "" H 6650 3350 50  0000 C CNN
+	1    6650 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3200 6650 3200
+Connection ~ 6400 3200
+Wire Wire Line
+	6000 3500 6650 3500
+$Comp
+L CONN_01X04 P1
+U 1 1 56EF19EF
+P 4250 3200
+F 0 "P1" H 4250 3450 50  0000 C CNN
+F 1 "CONN_01X04" V 4350 3200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 4250 3200 50  0001 C CNN
+F 3 "" H 4250 3200 50  0000 C CNN
+	1    4250 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR05
+U 1 1 56EF1A68
+P 4050 3050
+F 0 "#PWR05" H 4050 2900 50  0001 C CNN
+F 1 "VCC" H 4050 3200 50  0000 C CNN
+F 2 "" H 4050 3050 50  0000 C CNN
+F 3 "" H 4050 3050 50  0000 C CNN
+	1    4050 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3150 4050 3150
+Wire Wire Line
+	3900 3250 4050 3250
+Wire Wire Line
+	3900 3350 4050 3350
+Text Label 4600 3200 0    60   ~ 0
+SDA
+Text Label 4600 3350 0    60   ~ 0
+SCL
+Wire Wire Line
+	4600 3200 4700 3200
+Wire Wire Line
+	4700 3350 4600 3350
+Text Label 3900 3250 0    60   ~ 0
+SCL
+Text Label 3900 3350 0    60   ~ 0
+SDA
+Wire Wire Line
+	6000 3350 6000 3650
+Connection ~ 6400 3500
+Connection ~ 6000 3500
+$EndSCHEMATC

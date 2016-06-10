@@ -1,0 +1,9 @@
+(export (version D)
+  (design
+    (source C:/KiCAD/kicad/template/osh-park/osh-park.sch)
+    (date "28-9-2014 23:04:50")
+    (tool "Eeschema (2014-09-28 BZR 5153)-product"))
+  (components)
+  (libparts)
+  (libraries)
+  (nets))
