@@ -1,4 +1,4 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.2-stable)
+(kicad_pcb (version 4) (host pcbnew "(2014-09-28 BZR 5153)-product")
 
   (general
     (links 0)
@@ -16,11 +16,24 @@
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
+    (32 B.Adhes user)
+    (33 F.Adhes user)
+    (34 B.Paste user)
+    (35 F.Paste user)
     (36 B.SilkS user)
     (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
+    (40 Dwgs.User user)
+    (41 Cmts.User user)
+    (42 Eco1.User user)
+    (43 Eco2.User user)
     (44 Edge.Cuts user)
+    (45 Margin user)
+    (46 B.CrtYd user)
+    (47 F.CrtYd user)
+    (48 B.Fab user)
+    (49 F.Fab user)
   )
 
   (setup
@@ -62,7 +75,7 @@
     (pad_to_mask_clearance 0.05)
     (pad_to_paste_clearance -0.04)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFFFFFF)
+    (visible_elements FFFFFF7F)
     (pcbplotparams
       (layerselection 0x3ffff_80000001)
       (usegerberextensions true)
