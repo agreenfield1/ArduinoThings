@@ -1,4 +1,4 @@
-update=6/10/2016 7:41:44 PM
+update=6/11/2016 6:32:45 AM
 version=1
 last_client=kicad
 [cvpcb]
@@ -35,7 +35,7 @@ ModuleOutlineThickness=0.127
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=//FREENAS/Shares/PersonalData/Electronics/ArduinoThings/Kicad Libraries
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -66,3 +66,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
+LibName30=ajglib
