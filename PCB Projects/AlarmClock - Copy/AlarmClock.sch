@@ -353,19 +353,6 @@ F 3 "" H 5450 5550 50  0000 C CNN
 	1    5450 5550
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R3
-U 1 1 56FFA0B9
-P 4300 1500
-F 0 "R3" V 4380 1500 50  0000 C CNN
-F 1 "1.5k" V 4300 1500 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 4230 1500 50  0001 C CNN
-F 3 "" H 4300 1500 50  0000 C CNN
-	1    4300 1500
-	1    0    0    -1  
-$EndComp
-Text Label 4050 1650 0    60   ~ 0
-PWM
 NoConn ~ 6150 650 
 NoConn ~ 4850 950 
 NoConn ~ 4850 1400
@@ -593,8 +580,6 @@ F 3 "" H 9900 2600 50  0000 C CNN
 	1    9900 2600
 	0    1    1    0   
 $EndComp
-Text Label 9550 2600 0    60   ~ 0
-PWM
 $Comp
 L BARREL_JACK CON1
 U 1 1 570096A0
@@ -617,8 +602,6 @@ F 3 "" H 10350 2800 50  0000 C CNN
 	1    10350 2800
 	1    0    0    -1  
 $EndComp
-Text Label 4150 1250 0    60   ~ 0
-D5
 $Comp
 L PCF8574TS/3 U5
 U 1 1 571C3254
@@ -1305,9 +1288,9 @@ F 3 "" H 2250 4700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 3000 4400 0    60   ~ 0
-D4
+ADXL345-INT1
 Text Label 3000 4300 0    60   ~ 0
-D3
+ADXL345-INT2
 $Comp
 L +3.3V #PWR055
 U 1 1 571E81EA
@@ -1662,9 +1645,9 @@ F 3 "" H 3450 1100 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Label 3650 1800 0    60   ~ 0
-D2
+ROT-2
 Text Label 2050 1800 0    60   ~ 0
-D6
+ROT-1
 $Comp
 L GND #PWR069
 U 1 1 5728E1D8
@@ -1677,7 +1660,7 @@ F 3 "" H 3450 1200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 3550 1000 0    60   ~ 0
-D7
+ROT-BUTTON
 $Comp
 L +3.3V #PWR070
 U 1 1 5729E316
@@ -2051,7 +2034,7 @@ MISO
 Text Label -10750 6850 0    60   ~ 0
 MOSI
 Text Label -10750 7000 0    60   ~ 0
-D10
+W5100-CS
 Text Label -10750 7150 0    60   ~ 0
 SCK
 $Comp
@@ -2408,12 +2391,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 5250 7050 5250
 Wire Wire Line
-	4050 1650 4550 1650
-Wire Wire Line
-	4550 1650 4550 1250
-Wire Wire Line
-	4550 1250 4850 1250
-Connection ~ 4300 1650
+	4200 1250 4850 1250
 Wire Wire Line
 	7550 800  7550 1400
 Wire Wire Line
@@ -2456,11 +2434,7 @@ Wire Wire Line
 Wire Wire Line
 	10350 2400 10350 2300
 Wire Wire Line
-	9750 2600 9550 2600
-Wire Wire Line
-	4300 1350 4300 1250
-Wire Wire Line
-	4300 1250 4150 1250
+	9200 2600 9750 2600
 Wire Wire Line
 	7800 1900 7900 1900
 Wire Wire Line
@@ -3045,7 +3019,7 @@ F 3 "" H 13650 2550 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Label 12250 2750 0    60   ~ 0
-D9
+Si1145-INT
 Wire Wire Line
 	12250 2750 12400 2750
 NoConn ~ 12950 3200
@@ -3112,7 +3086,7 @@ Wire Wire Line
 Wire Wire Line
 	13650 4400 13750 4400
 Text Label 13650 4200 0    60   ~ 0
-A0
+TSL2581-INT
 Wire Wire Line
 	13650 4200 13750 4200
 $Comp
@@ -3173,4 +3147,43 @@ Text Label 1050 11450 0    60   ~ 0
 MOSI
 Text Label 1050 11600 0    60   ~ 0
 MISO
+Text Label 3450 11450 0    60   ~ 0
+ADXL345-INT1
+Text Label 3450 11300 0    60   ~ 0
+ADXL345-INT1
+Text Label 3450 11150 0    60   ~ 0
+ROT-2
+Text Label 3450 11000 0    60   ~ 0
+ROT-1
+Text Label 3450 10550 0    60   ~ 0
+ROT-BUTTON
+Text Label 4200 1250 0    60   ~ 0
+DS3232-INT
+Text Label 3450 10400 0    60   ~ 0
+DS3232-INT
+Text Label 3450 10250 0    60   ~ 0
+ALARM-PWM
+Text Label 9200 2600 0    60   ~ 0
+ALARM-PWM
+Text Label 3450 10100 0    60   ~ 0
+Si1145-INT
+Text Label 800  10100 0    60   ~ 0
+TSL2581-INT
+Wire Wire Line
+	800  10100 1350 10100
+Text Label 800  11300 0    60   ~ 0
+W5100-CS
+Wire Wire Line
+	850  10550 1350 10550
+Wire Wire Line
+	800  11300 1350 11300
+Text Label 800  11150 0    60   ~ 0
+W5100-RESET
+Wire Wire Line
+	800  11150 1350 11150
+Text Label -7800 4700 0    60   ~ 0
+W5100-RESET
+Wire Wire Line
+	-7800 4700 -7800 4850
+Connection ~ -7800 4850
 $EndSCHEMATC
