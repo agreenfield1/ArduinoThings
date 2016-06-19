@@ -31,7 +31,6 @@ LIBS:contrib
 LIBS:valves
 LIBS:ajglib
 LIBS:Backpack-cache
-LIBS:ProMiniBackplane-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -477,4 +476,19 @@ $EndComp
 Connection ~ 5300 5450
 Wire Wire Line
 	4700 3950 4900 3950
+$Comp
+L GND #PWR019
+U 1 1 57648C9D
+P 3000 3050
+F 0 "#PWR019" H 3000 2800 50  0001 C CNN
+F 1 "GND" H 3000 2900 50  0000 C CNN
+F 2 "" H 3000 3050 50  0000 C CNN
+F 3 "" H 3000 3050 50  0000 C CNN
+	1    3000 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3050 3250 3050
+Wire Wire Line
+	3250 3050 3250 2950
 $EndSCHEMATC

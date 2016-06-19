@@ -6,6 +6,7 @@
 #include <Wire.h>
 #include <SPI.h>
 #include <MySensor.h>  
+#include <Vcc.h>
 #define SENSORNODE 19 // edit node number
 #define SENSORLOCATION "Ambient Pressure"
 
@@ -14,6 +15,13 @@ MS5611 ms5611;
 
 MySensor gw;
 MyMessage msg0(0, V_PRESSURE);
+MyMessage msg1(1, V_VOLTAGE);
+
+const float VccMin   = 2.7;           // Minimum expected Vcc level, in Volts.
+const float VccMax   = 3.5;           // Maximum expected Vcc level, in Volts.
+const float VccCorrection = 1.0/1.0;  // Measured Vcc by multimeter divided by reported Vcc
+
+Vcc vcc(VccCorrection);
 
 unsigned long SLEEP_TIME = 30000; // Sleep time between reads (in milliseconds)
 
@@ -23,6 +31,7 @@ void setup()
   Wire.begin();        // join i2c bus (address optional for master)
   gw.sendSketchInfo(SENSORLOCATION, "1.0");
   gw.present(0, S_BARO, SENSORLOCATION);
+  gw.present(1, S_MULTIMETER, SENSORLOCATION);
   
     // Initialize MS5611 sensor
   Serial.println("Initialize MS5611 Sensor");
@@ -51,6 +60,7 @@ void loop()
   float inchesmg = realPressure2 * 0.000295;
   
   gw.send(msg0.set(inchesmg,3));
+  gw.send(msg1.set(vcc.Read_Volts(),2));
   gw.sleep(SLEEP_TIME); //sleep a bit
    
 }
