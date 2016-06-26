@@ -1,16 +1,16 @@
 //#define DEBUG
 //#define SOFTSPI
 //#define MY_RADIO_NRF24
-#define MY_RF24_CE_PIN 9
-#define MY_RF24_CS_PIN 10
+#define RF24_CE_PIN 6
+#define RF24_CS_PIN 7
 #include <Wire.h>
 #include <SPI.h>
 #include <Streaming.h>
 #include <MySensor.h>  
 #include <Vcc.h>
 
-#define SENSORNODE 16 // edit node number
-#define SENSORLOCATION "Upstairs Freezer"
+#define SENSORNODE 14 // edit node number
+#define SENSORLOCATION "BasementFreezer"
 
 #include <MCP9808.h>      //http://github.com/JChristensen/MCP9808
 

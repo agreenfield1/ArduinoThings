@@ -1,4 +1,4 @@
-update=5/29/2016 1:28:47 PM
+update=6/26/2016 3:19:07 PM
 version=1
 last_client=kicad
 [cvpcb]
@@ -71,3 +71,4 @@ LibName31=ajglib
 LibName32=mysensors_network
 LibName33=tm-kicad-lib
 LibName34=Teensy/teensy_3.1
+LibName35=//FREENAS/Shares/PersonalData/Electronics/ArduinoThings/Kicad Libraries/WIZ820io

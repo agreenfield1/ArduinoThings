@@ -1,3 +1,4 @@
+
 /**
  * The MySensors Arduino library handles the wireless radio link and protocol
  * between your home built sensors/actuators and HA controller of choice.
@@ -70,11 +71,12 @@
 #define MY_GATEWAY_MQTT_CLIENT
 
 // Set this nodes subscripe and publish topic prefix
-#define MY_MQTT_PUBLISH_TOPIC_PREFIX "mygateway1-out"
-#define MY_MQTT_SUBSCRIBE_TOPIC_PREFIX "mygateway1-in"
+#define MY_MQTT_PUBLISH_TOPIC_PREFIX "mygateway2-out"
+#define MY_MQTT_SUBSCRIBE_TOPIC_PREFIX "mygateway2-in"
 
 // Set MQTT client id
-#define MY_MQTT_CLIENT_ID "mysensors-1"
+#define MY_MQTT_CLIENT_ID "mysensors-2"
+#define MY_RF24_CHANNEL 45
 
 // W5100 Ethernet module SPI enable (optional if using a shield/module that manages SPI_EN signal)
 #define MY_W5100_SPI_EN 4  
@@ -98,7 +100,7 @@
 //#define MY_MQTT_PASSWORD "password"
 
 // Enable MY_IP_ADDRESS here if you want a static ip address (no DHCP)
-#define MY_IP_ADDRESS 10,20,30,31
+#define MY_IP_ADDRESS 10,20,30,55
 
 // If using static ip you need to define Gateway and Subnet address as well
 #define MY_IP_GATEWAY_ADDRESS 10,20,30,1

@@ -4,8 +4,8 @@
 //#define RF24_CE_PIN 9
 //#define RF24_CS_PIN 10
 
-#define SENSORNODE 12 // edit node number
-#define SENSORLOCATION "Outside"
+#define SENSORNODE 18 // edit node number
+#define SENSORLOCATION "Basement"
 
 #include <Wire.h>
 #include <SPI.h>
